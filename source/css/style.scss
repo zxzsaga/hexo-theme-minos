@@ -1,11 +1,18 @@
-$family-serif: "Ovo", "Georgia", "STZhongsong", "Microsoft YaHei", serif;
-$family-mono: "Source Code Pro", monospace, "Microsoft YaHei";
+$family-serif: "Microsoft YaHei", "Ovo", "Georgia", "STZhongsong", serif;
+$family-mono: "Microsoft YaHei", "Source Code Pro", monospace;
 $border-color: #dbdbdb;
 
 body, button, input, select, textarea {
     font-family: $family-serif;
 }
 
+video {
+    width: 640px;
+    height: 360px;
+    clear: both;
+    display: block;
+    margin: auto;
+}
 
 a.tag.article-tag {
     font-size: 0.9rem;
