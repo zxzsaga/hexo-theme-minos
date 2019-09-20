@@ -1,7 +1,7 @@
 <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         <% if (index) { %>
-            <a href="<%- url_for(post.link ? post.link : post.path) %>" itemprop="url"><%= post.title %></a>
+            <a href="<%- url_for(post.link ? post.link : post.path) %>index.html" itemprop="url"><%= post.title %></a>
         <% } else { %>
             <%= post.title %>
         <% } %>
@@ -47,12 +47,12 @@
     <div class="columns is-mobile is-multiline article-nav">
         <span class="column is-12-mobile is-half-desktop <%= !post.prev ? 'is-hidden-mobile' : '' %> article-nav-prev">
             <% if (post.prev){ %>
-            <a href="<%- url_for(post.prev.path) %>"><%= post.prev.title %></a>
+            <a href="<%- url_for(post.prev.path) %>index.html"><%= post.prev.title %></a>
             <% } %>
         </span>
         <span class="column is-12-mobile is-half-desktop <%= !post.next ? 'is-hidden-mobile' : '' %> article-nav-next">
             <% if (post.next){ %>
-            <a href="<%- url_for(post.next.path) %>"><%= post.next.title %></a>
+            <a href="<%- url_for(post.next.path) %>index.html"><%= post.next.title %></a>
             <% } %>
         </span>
     </div>
